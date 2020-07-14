@@ -1,10 +1,10 @@
 {{#each this}}
-<tr class="cart__item">
+<tr class="cart__item" data-id="{{id}}">
   <td>{{number @index}}</td>
   <td>{{name}}</td>
   <td>{{price}}</td>
-  <td>{{count}}</td>
+  <td><input class="cart__input" name="dishesCount" type="number" min="1" max="100" step="1" value="{{count}}" /></td>
   <td>{{totalPrice price count}}</td>
-  <td><button class="btn-trash" data-id="{{id}}"><i class="material-icons">delete</i></button></td>
+  <td><button class="btn-trash" data-action="remove"><i class="material-icons">delete</i></button></td>
 </tr>
 {{/each}}

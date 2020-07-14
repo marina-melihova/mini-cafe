@@ -16,7 +16,7 @@ export default {
   },
   cart: {
     order: [],
-    totalSum: 0,
+    totalAmount: 0,
     totalCount: 0,
   },
 };

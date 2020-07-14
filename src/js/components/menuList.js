@@ -21,8 +21,7 @@ const addToOrder = ({ target }) => {
   }
   const parent = target.closest('[data-id]'); //ищем родителя, у которого есть такой атрибут
   const id = parent.dataset.id;
-  const dish = cafe.dishes.find(item => item.id === id);
-  addToCart(dish);
+  addToCart(id);
 };
 
 refs.menuList.addEventListener('click', addToOrder);

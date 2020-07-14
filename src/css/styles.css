@@ -254,10 +254,13 @@ body.dark-theme {
   text-align: center;
 }
 
-.btn-close {
-  margin-left: 50%;
+.cart__buttons {
+  display: flex;
+  justify-content: center;
+}
+.cart__buttons button {
+  margin: 10px;
   padding: 10px 25px 13px;
-  transform: translateX(-50%);
   border-width: 0;
   border-radius: 5px;
   color: white;
@@ -290,6 +293,13 @@ td {
   text-align: left;
 }
 
+.cart__input {
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+}
+
 .productPagination {
   margin: 15px;
   padding: 10px;
@@ -300,7 +310,7 @@ td {
 }
 
 .paginationPageItem {
-  margin: 5px;
+  margin: 10px;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -314,5 +324,8 @@ td {
 
 .activePaginationPageItem {
   background-color: cornflowerblue;
-  /* color: black; */
+}
+
+.hidden {
+  display: none;
 }

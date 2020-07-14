@@ -45,21 +45,26 @@
 
   <!-- Разметка модального окна корзины -->
   <template id="modal" class="modal">
-    <h2 class="title-cart">Общая стоимость товаров в корзине</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>№ п/п</th>
-          <th>Название</th>
-          <th>Цена</th>
-          <th>Кол-во</th>
-          <th>Сумма</th>
-        </tr>
-      </thead>
-      <tbody id="cart"></tbody>
-    </table>
-    <div class="total">Итого: <span id="amount"></span> кредитов</div>
-    <button class="btn-close" type="button" data-close="modal">Закрыть</button>
+    <div class="cart__content">
+      <h2 class="title-cart">Общая стоимость товаров в корзине</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>№ п/п</th>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th>Сумма</th>
+          </tr>
+        </thead>
+        <tbody id="cart"></tbody>
+      </table>
+      <div class="total">Итого: <span id="amount">0</span> кредитов за <span id="count">0</span> порций</div>
+    </div>
+    <div class="cart__buttons">
+      <button class="btn-close" type="button" data-close="modal">Закрыть</button>
+      <button class="orderButton" type="button" data-action="confirm">Подтвердить заказ</button>
+    </div>
   </template>
 </body>
 
