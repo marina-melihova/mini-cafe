@@ -1,6 +1,6 @@
 import menu from '../menu.json';
 
-const cafe = {
+export default {
   dishes: [...menu],
   dish: {
     id: '',
@@ -20,5 +20,3 @@ const cafe = {
     totalCount: 0,
   },
 };
-
-export { cafe as default };

@@ -40,10 +40,10 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.btn-cart__icon {
+.tool__icon {
   color: currentColor;
-  height: 26px;
-  margin-right: 55px;
+  font-size: 26px;
+  margin-right: 35px;
 }
 
 /* THEME SWITCH */
@@ -244,7 +244,7 @@ body.dark-theme {
   margin-right: 8px;
 }
 
-.modal {
+.basicLightbox__placeholder {
   padding: 25px;
   color: #000;
   background-color: #fff;

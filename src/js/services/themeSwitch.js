@@ -5,7 +5,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-function initTheme() {
+const initTheme = () => {
   const theme = localStorage.getItem('theme');
   if (theme) {
     refs.body.classList.add(theme);
@@ -15,12 +15,12 @@ function initTheme() {
   } else {
     refs.body.classList.add(Theme.LIGHT);
   }
-}
+};
 
-function onChangeSwitch({ target }) {
+const onChangeSwitch = ({ target }) => {
   localStorage.setItem('theme', target.checked ? Theme.DARK : Theme.LIGHT);
   refs.body.classList.toggle(Theme.LIGHT);
   refs.body.classList.toggle(Theme.DARK);
-}
+};
 
 export { initTheme, onChangeSwitch };
