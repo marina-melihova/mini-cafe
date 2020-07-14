@@ -1,0 +1,10 @@
+{{#each this}}
+<tr class="cart__item">
+  <td>{{number @index}}</td>
+  <td>{{name}}</td>
+  <td>{{price}}</td>
+  <td>{{count}}</td>
+  <td>{{totalPrice price count}}</td>
+  <td><button class="btn-trash" data-id="{{id}}"><i class="material-icons">delete</i></button></td>
+</tr>
+{{/each}}
